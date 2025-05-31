@@ -1,16 +1,21 @@
+> [!Note]
+> This Is a fork of CortexPE/Commando Aimed for the plugin [Cerberus](https://www.github.com/CerberusPM/Cerberus)
 <h1>Commando<img src="https://raw.githubusercontent.com/CortexPE/Commando/master/commando.png" height="64" width="64" align="left"></img>&nbsp;<img src="https://poggit.pmmp.io/ci.shield/CortexPE/Commando/~"></img></h1>
-<br />
+<br>
+# Installation:
+<br>
 
-A PocketMine-MP Virion for easier implementation of dynamic commands, including support for Minecraft: Bedrock Edition argument listing aimed for both the end users and the plugin developers.
+go to poggit Builds: [here](https://poggit.pmmp.io/ci/CerberusPM/Commando) and download the phar, then put it in the `virions` folder in your server file (if it doesnt exist, then make one (eventually this repo will have prebuilt phars for Commando)
+then for this to work you will NEED DeVirion: [Here](https://www.github.com/CerberusPM/DeVirion) and pop that into your plugins folder
 
-# Usage:
-Installation is easy, you may get a compiled phar [here](https://poggit.pmmp.io/ci/CortexPE/Commando/~), integrate the virion itself into your plugin or you could also use it as a composer library by running the command below:
+# UGHHH THIS PLUGIN ALSO REQUIRES A DEPENDENCY FOR CERBERUS TO WORK:
 
-`composer require cortexpe/commando`
+[Muqsit/SimplePacketHandler](https://www.github.com/Muqsit/SimplePacketHandler)
 
-This virion is purely object oriented. So, to use it you'll have to extend the `BaseCommand` object, import the `PacketHooker` object and the optional objects for subcommands and arguments (whenever necessary).
 
-For PocketMine-MP API 5, you will need to include [Muqsit/SimplePacketHandler](https://github.com/Muqsit/SimplePacketHandler) in your dependencies.
+# ORIGINAL README STUFF: 
+
+
 
 # Why is this necessary?
 The virion provides an easy way to verify user input, convert user input, and for making sure that our arguments are the type that we expect it to.
