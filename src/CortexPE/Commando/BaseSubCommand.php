@@ -40,7 +40,7 @@ use function explode;
 abstract class BaseSubCommand implements IArgumentable, IRunnable {
 	use ArgumentableTrait;
 	/** @var string */
-	private string $name;
+	private string $name = "";
 	/** @var string[] */
 	private array $aliases = [];
 	/** @var string */
